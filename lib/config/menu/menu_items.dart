@@ -12,19 +12,25 @@ class MenuItem {
     required this.link,
     required this.icon,
   });
-} 
+}
 
 final List<MenuItem> appMenuItems = [
   MenuItem(
     title: 'Botones',
     subtitle: 'Varios Botones',
-    link: '/buttons', 
+    link: '/buttons',
     icon: Icons.smart_button,
+  ),
+  MenuItem(
+    title: 'Tarjetas',
+    subtitle: 'Un contenedor estilizado',
+    link: '/cards',
+    icon: Icons.credit_card,
   ),
   MenuItem(
     title: 'Contador',
     subtitle: 'Incrementar y decrementar',
-    link: '/buttons',
-    icon: Icons.smart_button,
+    link: '/counter',
+    icon: Icons.plus_one,
   ),
 ];
