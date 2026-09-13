@@ -27,10 +27,5 @@ final List<MenuItem> appMenuItems = [
     link: '/cards',
     icon: Icons.credit_card,
   ),
-  MenuItem(
-    title: 'Contador',
-    subtitle: 'Incrementar y decrementar',
-    link: '/counter',
-    icon: Icons.plus_one,
-  ),
+ 
 ];

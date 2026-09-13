@@ -7,9 +7,8 @@ class CardsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Cards Screen')),
-      body:  const Center(child: Text('Cards Screen')),
+    return Scaffold(appBar: AppBar(title: const Text('Cards Screen')),
+    body:  const Center(child: Text('Cards Screen')),
     );
   }
 }
