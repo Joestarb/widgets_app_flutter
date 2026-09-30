@@ -15,7 +15,6 @@ class ProgressScreen extends StatelessWidget {
 }
 
 class _ProgressView extends StatelessWidget {
-  const _ProgressView({super.key});
 
   @override
   Widget build(BuildContext context) {

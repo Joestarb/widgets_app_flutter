@@ -33,4 +33,10 @@ final List<MenuItem> appMenuItems = [
     link: '/progress',
     icon: Icons.star_border,
   ),
+  MenuItem(
+    title: 'SnackBar',
+    subtitle: 'Indicadores en pantalla',
+    link: '/snackbars',
+    icon: Icons.info,
+  ),
 ];
