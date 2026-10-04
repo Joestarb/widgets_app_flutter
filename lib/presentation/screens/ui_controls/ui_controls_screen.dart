@@ -62,6 +62,52 @@ class _UiControlsState extends State<_UiControls> {
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               const SizedBox(height: 10),
+              ExpansionTile(
+                title: Text('Medio de transporte'),
+                subtitle: Text('${selectedTransportation}'),
+                children: [
+                  RadioListTile(
+                    value: Transportation.car,
+                    groupValue: selectedTransportation,
+                    title: const Text('Auto'),
+                    onChanged: (value) {
+                      setState(() {
+                        selectedTransportation = Transportation.car;
+                      });
+                    },
+                  ),
+                  RadioListTile(
+                    value: Transportation.plane,
+                    groupValue: selectedTransportation,
+                    title: const Text('Avión'),
+                    onChanged: (value) {
+                      setState(() {
+                        selectedTransportation = Transportation.plane;
+                      });
+                    },
+                  ),
+                  RadioListTile(
+                    value: Transportation.boat,
+                    groupValue: selectedTransportation,
+                    title: const Text('Barco'),
+                    onChanged: (value) {
+                      setState(() {
+                        selectedTransportation = Transportation.boat;
+                      });
+                    },
+                  ),
+                  RadioListTile(
+                    value: Transportation.submarine,
+                    groupValue: selectedTransportation,
+                    title: const Text('Submarino'),
+                    onChanged: (value) {
+                      setState(() {
+                        selectedTransportation = Transportation.submarine;
+                      });
+                    },
+                  ),
+                ],
+              ),
               SegmentedButton<Transportation>(
                 segments: const [
                   ButtonSegment(
@@ -81,7 +127,7 @@ class _UiControlsState extends State<_UiControls> {
                   ),
                   ButtonSegment(
                     value: Transportation.submarine,
-                    label: Text('Sub'),
+                    label: Text('SubMarino'),
                     icon: Icon(Icons.surfing_outlined),
                   ),
                 ],
@@ -91,6 +137,17 @@ class _UiControlsState extends State<_UiControls> {
                     selectedTransportation = newSelection.first;
                   });
                 },
+              ),
+              CheckboxListTile.adaptive(
+                value: isDriverActive,
+                onChanged: (value) {
+                  setState(() {
+                    isDriverActive = value ?? false;
+                  });
+                },
+                title: const Text('Driver activo'),
+                subtitle: const Text('Lleva pasajeros'),
+                controlAffinity: ListTileControlAffinity.leading,
               ),
             ],
           ),

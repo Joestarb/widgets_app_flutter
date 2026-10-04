@@ -51,4 +51,10 @@ final List<MenuItem> appMenuItems = [
     link: '/ui-controls',
     icon: Icons.list,
   ),
+  MenuItem(
+    title: 'App Tutorial',
+    subtitle: 'Tutorial de la aplicación',
+    link: '/tutorial',
+    icon: Icons.app_registration_rounded,
+  ),
 ];
