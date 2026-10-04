@@ -34,9 +34,21 @@ final List<MenuItem> appMenuItems = [
     icon: Icons.star_border,
   ),
   MenuItem(
-    title: 'SnackBar',
+    title: 'SnackBar y dialogs',
     subtitle: 'Indicadores en pantalla',
     link: '/snackbars',
     icon: Icons.info,
+  ),
+  MenuItem(
+    title: 'Animated Container',
+    subtitle: 'animacion de contenedores flutter',
+    link: '/animated',
+    icon: Icons.animation,
+  ),
+  MenuItem(
+    title: 'UI Controls + Tiles',
+    subtitle: 'Controles y listados',
+    link: '/ui-controls',
+    icon: Icons.list,
   ),
 ];
