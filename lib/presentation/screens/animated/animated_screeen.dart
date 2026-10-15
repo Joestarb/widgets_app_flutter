@@ -22,7 +22,6 @@ class _AnimatedContainer extends StatefulWidget {
 }
 
 class _AnimatedContainerState extends State<_AnimatedContainer> {
-  @override
   double width = 50;
   double height = 50;
   Color color = Colors.red;
